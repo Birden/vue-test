@@ -1,0 +1,42 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": "google",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": [2, 4, {
+      "SwitchCase": 1,
+      "FunctionDeclaration": {"parameters": "first"},
+      "FunctionExpression": {"parameters": "first"},
+      "flatTernaryExpressions": true,
+      "ignoredNodes": ["ConditionalExpression", "PropertyDefinition"]
+    }],
+    "max-len": [2, {
+      "code": 140,
+      "ignoreComments": true
+    }],
+    "no-bitwise": "off",
+    "no-param-reassign": "warn",
+    "no-plusplus": "off",
+    "no-console": "error",
+    "no-case-declarations": "off",
+    "comma-dangle": "off",
+    "object-curly-spacing": "off",
+    "linebreak-style": [0],
+    "space-before-function-paren": [
+      "error", {
+        "anonymous": "always",
+        "named": "always",
+        "asyncArrow": "ignore"
+      }
+    ],
+    "new-cap": "off"
+  }
+}
